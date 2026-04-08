@@ -108,11 +108,19 @@ td {
 }
 
 /* ===== Wireframe Common ===== */
+.wireframe {
+  max-width: 380px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background: #fff;
+  margin: 16px auto;
+  overflow: hidden;
+}
 .wf {
   border: 1px solid #e5e5e5;
   border-radius: 4px;
   background: #f5f5f5;
-  margin: 24px 0 32px;
+  margin: 20px 0 28px;
   overflow: hidden;
   font-size: 13px;
   color: #333;
@@ -121,12 +129,12 @@ td {
   display: flex;
   align-items: center;
   gap: 8px;
-  padding: 10px 16px;
+  padding: 8px 14px;
   border-bottom: 1px solid #e5e5e5;
   background: #fff;
 }
 .wf-dot {
-  width: 10px; height: 10px;
+  width: 8px; height: 8px;
   border-radius: 50%;
   background: #ccc;
 }
@@ -134,18 +142,18 @@ td {
 /* ===== WF: AI Chat ===== */
 .wf-chat-layout {
   display: flex;
-  min-height: 520px;
+  min-height: 420px;
 }
 .wf-sidebar {
-  width: 200px;
+  width: 160px;
   border-right: 1px solid #e5e5e5;
   background: #fff;
-  padding: 16px 0;
+  padding: 12px 0;
   flex-shrink: 0;
 }
 .wf-sidebar-item {
-  padding: 8px 20px;
-  font-size: 13px;
+  padding: 6px 14px;
+  font-size: 12px;
   color: #666;
   cursor: default;
 }
@@ -154,32 +162,15 @@ td {
   font-weight: 600;
   background: #f5f5f5;
   border-left: 3px solid #111;
-  padding-left: 17px;
+  padding-left: 11px;
 }
 .wf-main {
   flex: 1;
   display: flex;
   flex-direction: column;
 }
-.wf-tabs {
-  display: flex;
-  gap: 0;
-  border-bottom: 1px solid #e5e5e5;
-  background: #fff;
-}
-.wf-tab {
-  padding: 10px 20px;
-  font-size: 13px;
-  color: #999;
-  border-bottom: 2px solid transparent;
-}
-.wf-tab.active {
-  color: #111;
-  font-weight: 600;
-  border-bottom-color: #111;
-}
 .wf-progress {
-  padding: 10px 20px;
+  padding: 8px 16px;
   font-size: 12px;
   color: #666;
   background: #fff;
@@ -190,7 +181,7 @@ td {
 }
 .wf-progress-bar {
   flex: 1;
-  max-width: 200px;
+  max-width: 160px;
   height: 4px;
   background: #e5e5e5;
   border-radius: 2px;
@@ -204,19 +195,19 @@ td {
 }
 .wf-chat-area {
   flex: 1;
-  padding: 20px;
+  padding: 14px 16px;
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 8px;
   overflow-y: auto;
   background: #f5f5f5;
 }
 .wf-bubble {
-  max-width: 70%;
-  padding: 12px 16px;
+  max-width: 72%;
+  padding: 10px 14px;
   border-radius: 12px;
   font-size: 13px;
-  line-height: 1.6;
+  line-height: 1.55;
 }
 .wf-bubble.ai {
   background: #fff;
@@ -247,13 +238,13 @@ td {
 .wf-input-area {
   display: flex;
   gap: 8px;
-  padding: 12px 20px;
+  padding: 10px 14px;
   background: #fff;
   border-top: 1px solid #e5e5e5;
 }
 .wf-input {
   flex: 1;
-  padding: 10px 14px;
+  padding: 8px 12px;
   border: 1px solid #e5e5e5;
   border-radius: 6px;
   font-size: 13px;
@@ -261,7 +252,7 @@ td {
   background: #f5f5f5;
 }
 .wf-send-btn {
-  padding: 10px 20px;
+  padding: 8px 16px;
   background: #111;
   color: #fff;
   border: none;
@@ -271,7 +262,7 @@ td {
   cursor: default;
 }
 .wf-disclaimer {
-  padding: 8px 20px;
+  padding: 6px 16px;
   font-size: 11px;
   color: #999;
   text-align: center;
@@ -284,45 +275,45 @@ td {
   border: 1px solid #e5e5e5;
   border-radius: 4px;
   background: #fff;
-  margin: 24px 0 32px;
+  margin: 20px 0 28px;
   overflow: hidden;
 }
 .wf-card-header {
-  padding: 20px 24px;
+  padding: 14px 16px;
   border-bottom: 1px solid #e5e5e5;
   background: #f5f5f5;
 }
 .wf-card-header h4 {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 700;
-  margin-bottom: 4px;
+  margin-bottom: 3px;
 }
 .wf-card-meta {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
-  font-size: 12px;
+  gap: 10px;
+  font-size: 11px;
   color: #666;
-  margin-top: 8px;
+  margin-top: 6px;
 }
 .wf-card-body {
-  padding: 24px;
+  padding: 16px;
 }
 .wf-card-section {
-  margin-bottom: 20px;
+  margin-bottom: 14px;
 }
 .wf-card-section-title {
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 700;
   color: #111;
-  margin-bottom: 8px;
-  padding-bottom: 6px;
+  margin-bottom: 6px;
+  padding-bottom: 4px;
   border-bottom: 1px solid #e5e5e5;
 }
 .wf-card-item {
-  font-size: 13px;
+  font-size: 12px;
   color: #333;
-  padding: 4px 0;
+  padding: 3px 0;
   padding-left: 12px;
   position: relative;
 }
@@ -330,7 +321,7 @@ td {
   content: '';
   position: absolute;
   left: 0;
-  top: 11px;
+  top: 10px;
   width: 4px;
   height: 4px;
   border-radius: 50%;
@@ -338,13 +329,13 @@ td {
 }
 .wf-card-cta {
   display: flex;
-  gap: 10px;
-  padding: 20px 24px;
+  gap: 8px;
+  padding: 14px 16px;
   border-top: 1px solid #e5e5e5;
   background: #f5f5f5;
 }
 .wf-btn-primary {
-  padding: 10px 24px;
+  padding: 8px 20px;
   background: #111;
   color: #fff;
   border: none;
@@ -354,7 +345,7 @@ td {
   cursor: default;
 }
 .wf-btn-secondary {
-  padding: 10px 24px;
+  padding: 8px 20px;
   background: #fff;
   color: #111;
   border: 1px solid #111;
@@ -367,48 +358,48 @@ td {
 /* ===== WF: Modal ===== */
 .wf-modal-wrap {
   background: rgba(0,0,0,0.15);
-  padding: 40px 20px;
+  padding: 24px 16px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  min-height: 300px;
+  min-height: 200px;
 }
 .wf-modal {
   background: #fff;
   border: 1px solid #e5e5e5;
   border-radius: 8px;
   width: 100%;
-  max-width: 420px;
-  padding: 32px;
+  max-width: 340px;
+  padding: 20px;
   text-align: center;
 }
 .wf-modal-check {
-  width: 48px;
-  height: 48px;
+  width: 40px;
+  height: 40px;
   border: 2px solid #111;
   border-radius: 50%;
-  margin: 0 auto 16px;
+  margin: 0 auto 12px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 22px;
+  font-size: 18px;
   color: #111;
 }
 .wf-modal h4 {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 700;
-  margin-bottom: 6px;
-}
-.wf-modal p {
-  font-size: 13px;
-  color: #666;
   margin-bottom: 4px;
 }
-.wf-modal .wf-modal-notice {
+.wf-modal p {
   font-size: 12px;
+  color: #666;
+  margin-bottom: 3px;
+}
+.wf-modal .wf-modal-notice {
+  font-size: 11px;
   color: #999;
-  margin-top: 16px;
-  margin-bottom: 20px;
+  margin-top: 12px;
+  margin-bottom: 16px;
 }
 .wf-modal .wf-btn-primary {
   width: 100%;
@@ -492,11 +483,11 @@ td {
   overflow: hidden;
 }
 .wf-detail-header {
-  padding: 20px 24px;
+  padding: 14px 16px;
   border-bottom: 1px solid #e5e5e5;
 }
 .wf-detail-header h4 {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 700;
   margin-bottom: 4px;
 }
@@ -508,50 +499,50 @@ td {
   flex-wrap: wrap;
 }
 .wf-detail-body {
-  padding: 24px;
+  padding: 16px;
   border-bottom: 1px solid #e5e5e5;
 }
 .wf-detail-body h5 {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 700;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 .wf-detail-body p {
-  font-size: 13px;
+  font-size: 12px;
   color: #333;
-  line-height: 1.7;
+  line-height: 1.65;
 }
 .wf-answers {
-  padding: 24px;
+  padding: 16px;
 }
 .wf-answers-title {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 700;
-  margin-bottom: 16px;
-  padding-bottom: 8px;
+  margin-bottom: 12px;
+  padding-bottom: 6px;
   border-bottom: 1px solid #e5e5e5;
 }
 .wf-answer-card {
   border: 1px solid #e5e5e5;
   border-radius: 4px;
-  padding: 20px;
-  margin-bottom: 12px;
+  padding: 14px;
+  margin-bottom: 8px;
   background: #f5f5f5;
 }
 .wf-answer-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 .wf-answer-name {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 700;
 }
 .wf-answer-field {
   font-size: 11px;
   color: #999;
-  margin-left: 8px;
+  margin-left: 6px;
   font-weight: 400;
 }
 .wf-answer-date {
@@ -559,14 +550,14 @@ td {
   color: #999;
 }
 .wf-answer-text {
-  font-size: 13px;
+  font-size: 12px;
   color: #333;
-  line-height: 1.7;
+  line-height: 1.65;
 }
 .wf-detail-cta {
   display: flex;
-  gap: 10px;
-  padding: 20px 24px;
+  gap: 8px;
+  padding: 14px 16px;
   border-top: 1px solid #e5e5e5;
   background: #f5f5f5;
 }
@@ -577,67 +568,67 @@ td {
   border: 1px solid #e5e5e5;
   border-radius: 8px;
   width: 100%;
-  max-width: 420px;
+  max-width: 340px;
   overflow: hidden;
 }
 .wf-form-modal-header {
-  padding: 20px 24px;
+  padding: 14px 20px;
   border-bottom: 1px solid #e5e5e5;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 700;
 }
 .wf-form-modal-body {
-  padding: 24px;
+  padding: 20px;
 }
 .wf-form-group {
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 }
 .wf-form-label {
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 600;
   color: #333;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
   display: block;
 }
 .wf-form-input {
   width: 100%;
-  padding: 10px 12px;
+  padding: 8px 10px;
   border: 1px solid #e5e5e5;
   border-radius: 4px;
-  font-size: 13px;
+  font-size: 12px;
   color: #999;
   background: #f5f5f5;
 }
 .wf-form-textarea {
   width: 100%;
-  padding: 10px 12px;
+  padding: 8px 10px;
   border: 1px solid #e5e5e5;
   border-radius: 4px;
-  font-size: 13px;
+  font-size: 12px;
   color: #999;
   background: #f5f5f5;
-  min-height: 80px;
+  min-height: 64px;
   resize: vertical;
 }
 .wf-form-select {
   width: 100%;
-  padding: 10px 12px;
+  padding: 8px 10px;
   border: 1px solid #e5e5e5;
   border-radius: 4px;
-  font-size: 13px;
+  font-size: 12px;
   color: #999;
   background: #f5f5f5;
   appearance: none;
 }
 .wf-form-notice {
-  font-size: 12px;
+  font-size: 11px;
   color: #999;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 .wf-form-modal-footer {
   display: flex;
-  gap: 10px;
-  padding: 16px 24px;
+  gap: 8px;
+  padding: 12px 20px;
   border-top: 1px solid #e5e5e5;
   background: #f5f5f5;
   justify-content: flex-end;
@@ -777,7 +768,7 @@ td {
 
   <h3>2-1. 화면 설명</h3>
   <p>
-    AI 상담 화면은 대화형(채팅) 인터페이스로 구성됩니다. 좌측에는 XpERP/Xp비서의 기존 사이드바 내비게이션이 위치하며, 중앙에 대화 영역이 배치됩니다.
+    AI 상담 화면은 대화형(채팅) 인터페이스로 구성됩니다. 좌측에는 XpERP/Xp비서의 기존 사이드바 내비게이션이 위치하며, 중앙에 법률 자문 전용 대화 영역이 배치됩니다. 탭 없이 법률 자문 단일 화면으로 구성됩니다.
   </p>
   <p>
     AI는 사용자의 초기 입력을 받은 후, 법적 쟁점 파악에 필요한 핵심 질문을 순차적으로 제시합니다. 질문은 10개를 초과하지 않으며, 각 질문은 이전 답변을 반영하여 맥락적으로 이어집니다.
@@ -793,8 +784,7 @@ td {
     </thead>
     <tbody>
       <tr><td>사이드바</td><td>좌측</td><td>XpERP 기존 메뉴 (홈, 정보게시판, 문의내역, 전자계약 등)</td></tr>
-      <tr><td>상단 탭</td><td>중앙 상단</td><td>법률상담 문의 (활성) / 시설보수 / 업무문의</td></tr>
-      <tr><td>대화 영역</td><td>중앙</td><td>AI 질문(좌측 버블) + 사용자 답변(우측 버블)</td></tr>
+      <tr><td>대화 영역</td><td>중앙</td><td>AI 질문(좌측 버블) + 사용자 답변(우측 버블) — 법률 자문 단일 화면</td></tr>
       <tr><td>퀵 선택</td><td>대화 내</td><td>유형 선택 등 빠른 응답 버튼</td></tr>
       <tr><td>진행 표시</td><td>대화 상단</td><td>"질문 3/8" 형태 진행바</td></tr>
       <tr><td>입력 필드</td><td>하단</td><td>텍스트 입력 + 전송 버튼</td></tr>
@@ -804,7 +794,8 @@ td {
 
   <h3>2-3. 와이어프레임</h3>
 
-  <div class="wf">
+  <div class="wireframe">
+  <div class="wf" style="margin:0; border-radius:0; border:none;">
     <div class="wf-header">
       <div class="wf-dot"></div><div class="wf-dot"></div><div class="wf-dot"></div>
       <span style="margin-left:8px; font-size:12px; color:#999;">XpERP - 법률상담</span>
@@ -823,11 +814,6 @@ td {
       </div>
       <!-- Main -->
       <div class="wf-main">
-        <div class="wf-tabs">
-          <div class="wf-tab active">법률상담 문의</div>
-          <div class="wf-tab">시설보수</div>
-          <div class="wf-tab">업무문의</div>
-        </div>
         <div class="wf-progress">
           <span>질문 3 / 8</span>
           <div class="wf-progress-bar"><div class="wf-progress-fill"></div></div>
@@ -858,6 +844,7 @@ td {
         <div class="wf-disclaimer">AI는 사실관계 정리를 지원하며, 법적 판단은 변호사가 직접 제공합니다.</div>
       </div>
     </div>
+  </div>
   </div>
 </div>
 
@@ -892,7 +879,8 @@ td {
 
   <h3>3-3. 와이어프레임</h3>
 
-  <div class="wf-card">
+  <div class="wireframe">
+  <div class="wf-card" style="margin:0; border-radius:0; border:none;">
     <div class="wf-card-header">
       <h4>사실관계 정리서</h4>
       <div class="wf-card-meta">
@@ -927,6 +915,7 @@ td {
       <button class="wf-btn-secondary">수정하기</button>
     </div>
   </div>
+  </div>
 </div>
 
 <!-- ==================== SECTION 04 ==================== -->
@@ -955,7 +944,8 @@ td {
 
   <h3>4-3. 와이어프레임</h3>
 
-  <div class="wf-modal-wrap">
+  <div class="wireframe">
+  <div class="wf-modal-wrap" style="border-radius:0;">
     <div class="wf-modal">
       <div class="wf-modal-check">&#10003;</div>
       <h4>접수가 완료되었습니다</h4>
@@ -964,6 +954,7 @@ td {
       <p class="wf-modal-notice">변호사 검토 후 의견이 등록되면 알림으로 안내드리겠습니다.<br>(통상 1~3 영업일)</p>
       <button class="wf-btn-primary">확인</button>
     </div>
+  </div>
   </div>
 </div>
 
@@ -992,7 +983,8 @@ td {
 
   <h3>5-3. 와이어프레임</h3>
 
-  <div class="wf-list">
+  <div class="wireframe" style="max-width:560px;">
+  <div class="wf-list" style="margin:0; border-radius:0; border:none;">
     <div class="wf-list-toolbar">
       <div class="wf-list-filters">
         <div class="wf-list-filter active">전체 (5)</div>
@@ -1056,6 +1048,7 @@ td {
       </tbody>
     </table>
   </div>
+  </div>
 </div>
 
 <!-- ==================== SECTION 06 ==================== -->
@@ -1087,7 +1080,8 @@ td {
 
   <h3>6-3. 와이어프레임</h3>
 
-  <div class="wf-detail">
+  <div class="wireframe" style="max-width:480px;">
+  <div class="wf-detail" style="margin:0; border-radius:0; border:none;">
     <div class="wf-detail-header">
       <h4>지하주차장 B구역 누수 및 차량 침수 피해</h4>
       <div class="wf-detail-meta">
@@ -1143,6 +1137,7 @@ td {
       <button class="wf-btn-primary">법률 자문 요청</button>
       <button class="wf-btn-secondary">연락 요청</button>
     </div>
+  </div>
   </div>
 </div>
 
